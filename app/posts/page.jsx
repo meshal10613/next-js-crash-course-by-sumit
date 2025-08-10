@@ -15,7 +15,7 @@ export default async function Posts() {
             <div className='mt-6 flex flex-col gap-5'>
                 {
                     posts.map((post) => (
-                        <Link href={`/posts/${post.id}`} key={post.id} className='border w-fit'>{post.name}</Link>
+                        <Link href={`/posts/${post.id}`} key={post.id} className='border w-fit'>{post.title}</Link>
                     ))
                 }
             </div>
